@@ -12,7 +12,7 @@ How Your Asset Pipeline Works:
 
 Loads 64 sprites from 8x8 of 8x8 sprites directly from png file. Uses load_png to get pixel data, then formats it row-major ordered, where entry 0 is the top left sprite, and entry 63 is the bottom right. Some shortcuts were taken due to knowing the format, such as assuming there are 4 palettes and that a new palette appears every 2 rows. 
 
-[link](dist/tile.png)
+![Tile PNG](dist/tile.png)
 
 How To Play:
 

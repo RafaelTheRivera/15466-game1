@@ -1,8 +1,8 @@
-# (TODO: your game's title)
+# Tile Memory
 
-Author: (TODO: your name)
+Author: Rafael Rivera
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: Pattern memory game, but tiles are unique and they get shuffled; player repeats tile pattern not spatial pattern.
 
 Screen Shot:
 
@@ -10,13 +10,13 @@ Screen Shot:
 
 How Your Asset Pipeline Works:
 
-(TODO: describe the steps in your asset pipeline, from source files to tiles/backgrounds/whatever you upload to the PPU466.)
+Loads 64 sprites from 8x8 of 8x8 sprites directly from png file. Uses load_png to get pixel data, then formats it row-major ordered, where entry 0 is the top left sprite, and entry 63 is the bottom right. Some shortcuts were taken due to knowing the format, such as assuming there are 4 palettes and that a new palette appears every 2 rows. 
 
-(TODO: make sure the source files you drew are included. You can [link](your/file.png) to them to be a bit fancier.)
+[link](dist/tile.png)
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+Press middle mouse button to start. The tiles will show a pattern, then shuffle. Select the specific tiles (not their position) as shown initially. Left click to select a tile, right click to unselect a tile, and middle mouse button to submit. If your replication is correct, the board will flash green, otherwise it will flash red.
 
 This game was built with [NEST](NEST.md).
 

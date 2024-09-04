@@ -20,8 +20,10 @@ struct PlayMode : Mode {
 	//input tracking:
 	struct Button {
 		uint8_t downs = 0;
-		uint8_t pressed = 0;
-	} left, right, down, up;
+		uint8_t pressed = 255;
+		uint16_t x = 0;
+		uint16_t y = 0;
+	} left, middle, right, pos;
 
 	//some weird background animation:
 	float background_fade = 0.0f;
